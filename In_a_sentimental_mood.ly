@@ -27,7 +27,7 @@ melody = {
 
 \score {
   \relative c' {
-    c4
+    \melody
   }
 
   \layout {}
