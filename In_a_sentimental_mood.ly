@@ -26,10 +26,16 @@ melody = {
 }
 
 \score {
-  \relative c' {
-    \melody
+
+  <<
+  \new ChordNames {
+	\set chordChanges = ##t
+  	\harmonies
   }
 
-  \layout {}
-  \midi {}
+  \new Staff
+  \melody
+  >>
+  \layout { }
+  \midi { \tempo 4 = 120 }
 }
