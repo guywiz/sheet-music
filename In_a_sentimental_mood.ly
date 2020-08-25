@@ -3,6 +3,9 @@
   composer = "Duke Ellington"
 }
 
+harmonies = {
+}
+
 melody = {
 	\key f major
 	\time 4/4
@@ -27,7 +30,6 @@ melody = {
 }
 
 \score {
-
   
 	<<
   %
