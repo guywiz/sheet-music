@@ -5,20 +5,54 @@
 
 harmonies = \chordmode {
 	c1:m7
-	bes:3-5-7
+	bes:7
 	aes:maj7
+	g:5+7
+	f:m7
 	g:m7
+	aes:maj7
+	g:7
 
-	e:3-5-7
-	e:3-5-7
-	d:3-5-7
-	g:maj7
-	R1 * 8
+	c1:m7
+	bes:7
+	aes:maj7
+	g:5+7
+	f:m7
+	g:m7
+	c:m7
+	c:m7
 
 	f:3-7+
+	f:m7
+	e:5+7
+	e:m6
+	b:3-5-7
+	b:3-5-7-
+	c:m7
+	c:m6
+
+	f:3-7+
+	f:m7
+	e:5+7
+	e:m6
+	d:3-5-7
+	d:3-5-7-
+	aes:3-5-7
+	g:7
+
+	c1:m7
+	bes:7
+	aes:maj7
+	g:5+7
+	f:m7
+	g:m7
+	c:m7
+	c:m7
 
 }
 theme =   \relative c'' {
+		\override Score.MetronomeMark.padding = #3
+		\tempo 4 = 250
 		\time 4/4
 		\key c \major
 
@@ -89,6 +123,7 @@ theme =   \relative c'' {
 
 \score {
   <<
+
   \new ChordNames {
 	\set chordChanges = ##t
   	\harmonies
