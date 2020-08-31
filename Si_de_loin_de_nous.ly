@@ -6,6 +6,8 @@
 theme = {
 	\relative c' {
 		\tempo 4 = 145
+		\key c \major
+		
 		r8 f c' f, c' d r8 f,
 		c' f, c' d r2
 		r8 d f d f g r8 d
@@ -67,7 +69,7 @@ theme = {
 	%}
 
   \new Staff
-  %\transpose d c
+  \transpose f ees
 	\theme
 
   >>
