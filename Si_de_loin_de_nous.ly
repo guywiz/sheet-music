@@ -7,7 +7,7 @@ theme = {
 	\relative c' {
 		\tempo 4 = 145
 		\key c \major
-		
+
 		r8 f c' f, c' d r8 f,
 		c' f, c' d r2
 		r8 d f d f g r8 d
@@ -57,6 +57,7 @@ theme = {
 		r8 d f d f g~ g4
 		a8 ^>^. r r8 f8 ^>^. r2
 
+		\bar "|."
 	}
 }
 
