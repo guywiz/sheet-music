@@ -5,29 +5,29 @@
 
 theme = {
 	\relative c' {
-		\tempo Medium Swing 4 = 145
+		\tempo 4 = 145
 		r8 f c' f, c' d r8 f,
 		c' f, c' d r2
 		r8 d f d f g r8 d
 		f d f g r2
 		\break
-		r8 f, c' f, c' d~ d4
-		r8 f, c' f, c' d~ d4
+		r8 f, c' f, c' d r8 f,
+		c' f, c' d r2
 		r8 d f d f g~ g4
-		a4 r g r
+		a8 ^>^. r r8 g8 ^>^. r2
 
 		\break
 		\bar "||"
 
-		r8 f, c' f, c' d~ d4
-		r8 f, c' f, c' d~ d4
-		r8 d f d f g~ g4
-		r8 d f d f g~ g4
+		r8 f c' f, c' d r8 f,
+		c' f, c' d r2
+		r8 d f d f g r8 d
+		f d f g r2
 		\break
-		r8 f, c' f, c' d~ d4
-		r8 f, c' f, c' d~ d4
+		r8 f, c' f, c' d r8 f,
+		c' f, c' d r2
 		r8 d f d f g~ g4
-		a4 r g r
+		a8 ^>^. r r8 g8 ^>^. r2
 
 		\break
 		\bar "||"
