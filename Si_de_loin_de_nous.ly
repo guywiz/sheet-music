@@ -61,13 +61,50 @@ theme = {
 	}
 }
 
+harmonies = {
+ees2:maj7 aes:maj7
+ees2:7+ aes:7+
+c:m7 des:7+
+c:m7 des:7+
+ees2:7+ aes:7+
+g:7 fis:7
+f1:m7
+e:7.9+
+
+ees2:7+ aes:7+
+ees2:7+ aes:7+
+c:m7 des:7+
+c:m7 des:7+
+ees2:7+ aes:7+
+g:7 fis:7
+f1:m7
+d2:5-.7 g:7.13-
+
+c2:m7 b:3-.5-.7
+bes:m6 f/a
+aes1:7+
+d:3-.5-.7 g:7.13-
+c2:m7 b:3-.5-.7
+bes:m6 f/a
+f1:3-.9
+bes:5+.7
+
+ees2:7+ aes:7+
+ees2:7+ aes:7+
+c:m7 des:7+
+c:m7 des:7+
+ees2:7+ aes:7+
+g:7 fis:7
+f1:m7
+e:7.9+
+}
 \score {
   <<
 
-  %\new ChordNames {
-	%\set chordChanges = ##t
-  %	\harmonies
-	%}
+  \new ChordNames {
+	\set chordChanges = ##t
+  	\harmonies
+	}
 
   \new Staff
   \transpose f ees
