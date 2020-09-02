@@ -56,7 +56,7 @@ theme = {
 		r8 f, c' f, c' d r8 f,
 		c' f, c' d r2
 		r8 d f d f g~ g4
-		a8 ^>^. r r8 <g \parenthesize f> r2
+		a8 ^>^. r r8 <g \parenthesize f> ^>^. r2
 
 		\bar "|."
 	}
