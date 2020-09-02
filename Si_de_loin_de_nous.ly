@@ -5,7 +5,10 @@
 
 theme = {
 	\relative c' {
+		\override Score.MetronomeMark.padding = #3
 		\tempo 4 = 145
+		\key c \major
+
 		r8 f c' f, c' d r8 f,
 		c' f, c' d r2
 		r8 d f d f g r8 d
@@ -53,21 +56,58 @@ theme = {
 		r8 f, c' f, c' d r8 f,
 		c' f, c' d r2
 		r8 d f d f g~ g4
-		a8 ^>^. r r8 f8 ^>^. r2
+		a8 ^>^. r r8 <g \parenthesize f> ^>^. r2
 
+		\bar "|."
 	}
 }
 
+harmonies = \chordmode {
+	ees2:maj7 aes:maj
+	ees2:maj aes:maj
+	c:m7 des:maj
+	c:m7 des:maj
+	ees2:maj aes:maj
+	g:7 fis:7
+	f1:m7
+	e:7.9+
+
+	ees2:maj aes:maj
+	ees2:maj aes:maj
+	c:m7 des:maj
+	c:m7 des:maj
+	ees2:maj aes:maj
+	g:7 fis:7
+	f1:m7
+	d2:5-.7 g:7.13-
+
+	c2:m7 b:3-.5-.7
+	bes:m6 f/a
+	aes1:7+
+	d:3-.5-.7 g:7.13-
+	c2:m7 b:3-.5-.7
+	bes:m6 f/a
+	f1:3-.9
+	bes:5+.7
+
+	ees2:7+ aes:7+
+	ees2:7+ aes:7+
+	c:m7 des:7+
+	c:m7 des:7+
+	ees2:7+ aes:7+
+	g:7 fis:7
+	f4.:m7 \parenthesize e:7.9+
+}
 \score {
   <<
 
-  %\new ChordNames {
-	%\set chordChanges = ##t
-  %	\harmonies
-	%}
+  \new ChordNames {
+	\set chordChanges = ##t
+  	\harmonies
+	}
 
   \new Staff
-  %\transpose d c
+  \transpose f ees
 	\theme
 
   >>
