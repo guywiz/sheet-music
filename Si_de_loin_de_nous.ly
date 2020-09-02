@@ -5,6 +5,7 @@
 
 theme = {
 	\relative c' {
+		\override Score.MetronomeMark.padding = #3
 		\tempo 4 = 145
 		\key c \major
 
@@ -55,14 +56,14 @@ theme = {
 		r8 f, c' f, c' d r8 f,
 		c' f, c' d r2
 		r8 d f d f g~ g4
-		a8 ^>^. r r8 f8 ^>^. r2
+		a8 ^>^. r r8 <g \parenthesize f> r2
 
 		\bar "|."
 	}
 }
 
-harmonies = {
-	ees2:maj aes:maj
+harmonies = \chordmode {
+	ees2:maj7 aes:maj
 	ees2:maj aes:maj
 	c:m7 des:maj
 	c:m7 des:maj
@@ -95,8 +96,7 @@ harmonies = {
 	c:m7 des:7+
 	ees2:7+ aes:7+
 	g:7 fis:7
-	f1:m7
-	e:7.9+
+	f4.:m7 \parenthesize e:7.9+
 }
 \score {
   <<
