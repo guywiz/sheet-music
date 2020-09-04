@@ -87,7 +87,7 @@ harmonies = \chordmode {
 	d:3-.5-.7 g:7.13-
 	c2:m7 b:3-.5-.7
 	bes:m6 f/a
-	f1:3-.9
+	f1:m9
 	bes:5+.7
 
 	ees2:7+ aes:7+
