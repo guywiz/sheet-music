@@ -5,8 +5,41 @@
 
 harmonies = \chordmode {
   \partial 8 r8
+  \repeat volta 2 {
+    d2:m7 g:7
+    e:m7 dis:3-5-7-
+    d:m7 g:7
+    e:5-7 a:7
+    d:m7 f4:m7 bes:7.9-
+    e2:m7 a:7
+  }
+  \alternative {
+    {
+      d:m7 g:7
+      c:maj7 a:7
+    }
+    {
+      d:m7 g:7
+      c1:6.9
+    }
+  }
+  g2:m7 c:7.9+
+  f:maj7 d:7.9-
+  g2:m7 c:7.9+
+  f1:maj7
+  fis2:m7 b:7.9+
+  e1:maj7
+  a2:m7 d:7
+  d:m7 g:7
+
   d2:m7 g:7
-  
+  e:m7 dis:3-5-7-
+  d:m7 g:7
+  e:5-7 a:7
+  d:m7 f4:m7 bes:7.9-
+  e2:m7 a:7
+  d:m7 g:7
+  c:6.9
 
 }
 
@@ -63,7 +96,18 @@ melody = {
 }
 
 \score {
-  \melody
+  <<
+
+  \new ChordNames {
+	\set chordChanges = ##t
+  	\harmonies
+	}
+
+  \new Staff
+  %\transpose d c
+	\melody
+
+  >>
 
   \layout {}
   \midi {}
