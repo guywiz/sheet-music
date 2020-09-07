@@ -110,5 +110,5 @@ melody = {
   >>
 
   \layout {}
-  \midi {}
+  \midi { tempo = 140}
 }
