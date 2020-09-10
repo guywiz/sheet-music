@@ -34,7 +34,36 @@ altoA = {
 		r8 \! b4.~ b2
 		r8 \! b4.~ b2
 		\break
-
+		r8 g~ g4 a b
+		fis'2. e4
+		d8 \ff b, \times 2/3 {c ees g} d'8 \( c \) g \( ees \)
+		b'2~ \( b8 a \) f ees
+		\break
+		r8 b4. r8 c4.
+		r8 d4. r8 c4.
+		r8 b4. r8 c4.
+		r8 d4. r8 c4.
+		\break
+		r8 b4. r8 c4.
+		r8 d4. r8 e4.
+		\times 2/3 {r8 e \( fis} \times 2/3 {g a b \)} c8 d \( c \) b
+		r a \( b \) c~ c b\( a \) r
+		\break
+		r8 b4.~ b2
+		r8 b4.~ b2
+		r8 b4.~ b2
+		r8 b4.~ b2
+		\break
+		r8 e,~ \< e4 fis g \!
+		\times 2/3 {fis4 g fis~} fis2
+		r8 e^^ r4 fis2^>
+		f1 \>
+		\break
+		e \! \(
+		ees \)
+		r8 d4. r8 e!4.
+		r8 fis4. r8 g4.
+		r2
 	}
 }
 
