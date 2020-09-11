@@ -129,7 +129,7 @@ altoA = {
 	%}
 
 	\new Staff
-	%\transpose g c
+	\transpose g c
 	\altoA
 
   >>
