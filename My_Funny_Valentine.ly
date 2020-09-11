@@ -1,6 +1,7 @@
 \header {
-  title = "My Funny Valentine (Alto 1)"
+  title = "My Funny Valentine (Sop. from Alto 1)"
   composer = "Richard Rodgers"
+	arranger = "(arr. R. di Marino)"
 }
 
 altoA = {
@@ -8,18 +9,18 @@ altoA = {
 		\time 4/4
 		\key e \minor
 
-		r8 b'4.~ b2
+		r8 b'4.~ \p b2
 		r8 b4.~ b2
 		r8 b4.~ b2
 		r8 b4.~ \< b4. g8 \!
 		\break
 		R1
-		e2 \( c~
+		e2 \mf \( c~
 		c8 \) d \( c \) b~ b2
 		c1 \>
 		\bar "||"
 		\break
-		r8 \! b'4.~ b2
+		r8 \! b'4.~ \p b2
 		r8 \! b4.~ b2
 		r8 \! b4.~ b2
 		r8 \! b4.~ b2
@@ -27,19 +28,19 @@ altoA = {
 		r8 e,~ \< e4 fis g \!
 		d'2~ d8 c \( b \) a
 		r c \( b \) a~ a g \( a \) b~
-		b a \( g \) fis~ fis e \( dis \) r
+		b a \> \( g \) fis~ fis e \! \( dis\) r
 		\break
 		r8 \! b'4.~ b2
 		r8 \! b4.~ b2
 		r8 \! b4.~ b2
 		r8 \! b4.~ b2
 		\break
-		r8 g~ g4 a b
-		fis'2. \( e4 \)
-		d8 \ff b, \times 2/3 {c ees g} d'8 \( c \) g \( ees \)
-		b'2~ \( b8 a \) f ees
+		r8 g~ \mf \< g4 a b \!
+		fis'2. \f \( e4 \)
+		d8 \ff b, \times 2/3 {c \( ees g \)} d'8 \( c \) g \( ees \)
+		b'2~ \f \( b8 a \) f ees
 		\break
-		r8 b4. r8 c4.
+		r8 b4. \mf r8 c4.
 		r8 d4. r8 c4.
 		r8 b4. r8 c4.
 		r8 d4. r8 c4.
@@ -54,14 +55,14 @@ altoA = {
 		r8 b4.~ b2
 		r8 b4.~ b2
 		\break
-		r8 e,~ \< e4 fis g \!
+		r8 e,~ e4 fis g
 		\times 2/3 {fis4 g fis~} fis2
 		r8 e^^ r4 fis2^>
 		f1 \>
 		\break
-		e \! \(
+		e \! \p \(
 		ees \)
-		r8 d4. r8 e4.
+		r8 d4. r8 e!4.
 		r8 fis4. r8 g4.
 		\bar "||"
 		\break
@@ -75,46 +76,60 @@ altoA = {
 		a1~
 		a2. r4
 		\break
-		r2 \times 2/3 {g4 \( \f a b \)}
+		r2 \times 2/3 {g4 \( a b \)}
 		\times 2/3 {a \( b a~ \)} a2
 		r2 \times 2/3 {g4 \( \grace { c16 cis16 } d4 b \)}
 		\times 2/3 {a \( b a~ \)} a2
 		\break
-		r8 g~ g4 a b
-		fis'2. \( e4 \)
+		r8 g~ \mf \< g4 a b \!
+		fis'2. \f \( e4 \)
 		\times 2/3 {d8 \( cis \) c~} c2.
-		b2~ \( b8 a \) f \( ees \)
+		b2~ \f \( b8 a \) f \( ees \)
 		\break
-		r8 b4. r8 c4.
+		r8 b4. \mf r8 c4.
 		r8 d4. r8 c4.
 		r8 b4. r8 c4.
 		r8 d4. r8 c4.
 		\break
 		r8 b4. r8 c4.
 		r8 d4. r8 e4.
-		\times 2/3 {r8 e \( fis} \times 2/3 {g a b} \times 2/3 {c8 d c} \times 2/3 {b a g \)}
-		r a \( b \) c~ c b\( a \) r
+		\times 2/3 {r8 e \( fis} \times 2/3 {g \< a b} \times 2/3 {c8 d c \!} \times 2/3 {b a g \)}
+		r a \( b \) c~ \> c b\( a \! \) r
 		\break
-		r8 \! b'4.~ b2
+		r8 \! b4.~ b2
 		r8 \! b4.~ b2
 		r8 \! b4.~ b2
 		r8 \! b4.~ b2
 		\break
-
-
+		r8 e,~ \f e4 fis g
+		\times 2/3 {fis4 g fis~} fis2
+		r8 e^^ r4 fis2^>
+		\grace{g16 \( aes} a2. \> g4 \! \)
+		\break
+		e1 \p \(
+		ees2~ \) \times 2/3 {ees4 \> d \( c \) \!}
+		r8 b4. \pp r8 c4.
+		r8 d4. r8 c4.
+		\break
+		r8 b4. r8 c4.
+		r8 d4. r8 c4.
+		r8 b4.~ b2 ^\markup{Slower}
+		d1 \(
+		\grace{c16 b} a1\fermata \)
+		\bar "|."
 	}
 }
 
 \score {
   <<
 
-  %\new ChordNames {
+	%\new ChordNames {
 	%\set chordChanges = ##t
-  %	\harmonies
+	%\harmonies
 	%}
 
-  \new Staff
-  %\transpose d c
+	\new Staff
+	%\transpose g c
 	\altoA
 
   >>
