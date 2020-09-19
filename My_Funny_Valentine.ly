@@ -13,11 +13,11 @@ text = \lyricmode {
 	You __ make me
 	smile __ with my heart __
 		
-	%Your __ looks are
-	%laugh -- a -- ble __
-	%Un __ pho -- to -- gra -- pha -- ble __
-	%Yet __ you're -- my -- fav -- 'rite work of art __
-	%Is -- your -- fig -- ure __ less -- than -- Greek?
+	Your __ looks are
+	laugh -- a -- ble __
+	Un __ pho -- to -- gra -- pha -- ble __
+	Yet __ you're -- my -- fav -- 'rite work of art __
+	Is -- your -- fig -- ure __ less -- than -- Greek?
 	%Is -- your -- mouth -- a -- lit -- tle weak?
 	%When you open it to speak
 	%Are you smart?
