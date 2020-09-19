@@ -1,6 +1,6 @@
 \header {
-  title = "My Funny Valentine"
-  composer = "Richard Rodgers"
+	title = "My Funny Valentine"
+	composer = "Richard Rodgers"
 	arranger = "(arr. R. di Marino)"
 }
 
@@ -18,9 +18,9 @@ text = \lyricmode {
 	Un __ pho -- to -- gra -- pha -- ble __
 	Yet __ you're -- my -- fav -- 'rite work of art __
 	Is -- your -- fig -- ure __ less -- than -- Greek?
-	%Is -- your -- mouth -- a -- lit -- tle weak?
-	%When you open it to speak
-	%Are you smart?
+	Is -- your -- mouth -- a -- lit -- tle weak?
+	%When you o -- pen it to speak
+	Are you smart? __
 	%But don't change your hair for me
 	%Not if you care for me
 	%Stay little valentine, stay
@@ -209,7 +209,7 @@ altoA = {
     \new Voice = "voice" {
       \voice
     }
-    \new Lyrics \lyricsto "voice" \text
+    %\new Lyrics \lyricsto "voice" \text
 
   >>
 
