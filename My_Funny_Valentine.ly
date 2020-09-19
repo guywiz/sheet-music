@@ -1,13 +1,89 @@
 \header {
-  title = "My Funny Valentine (Sop. from Alto 1)"
+  title = "My Funny Valentine"
   composer = "Richard Rodgers"
 	arranger = "(arr. R. di Marino)"
+}
+
+text = \lyricmode {
+    My __ fun -- ny
+	Val -- en -- tine
+	Sweet __ co -- mic
+	Val -- en -- tine
+		
+	You __ make me
+	smile __ with my heart __
+		
+	%Your __ looks are
+	%laugh -- a -- ble __
+	%Un __ pho -- to -- gra -- pha -- ble __
+	%Yet __ you're -- my -- fav -- 'rite work of art __
+	%Is -- your -- fig -- ure __ less -- than -- Greek?
+	%Is -- your -- mouth -- a -- lit -- tle weak?
+	%When you open it to speak
+	%Are you smart?
+	%But don't change your hair for me
+	%Not if you care for me
+	%Stay little valentine, stay
+	%Each day is Valentine's day
+	%
+}
+voice = {
+	\relative c' {
+		\time 4/4
+		\key bes \major
+
+		\compressFullBarRests
+		R1 * 8
+		\bar "||"
+		r4 g~ \times 2/3 {g a bes}
+		\times 2/3 {a bes a~} a2
+		r4 g~ \times 2/3 {g a bes}
+		\times 2/3 {a bes a~} a2
+		\break
+		r8 g~ \< g4 a bes \!
+		f'2~f8 ees d c~
+		c1~
+		c2. \> r4 \!
+		r4 bes~ \times 2/3 {bes c d}
+		\times 2/3 {c d c~} c2
+		\break
+		r4 bes~ \times 2/3 {bes c d}
+		\times 2/3 {c d c~} c2
+		r8 bes~ bes4 c d
+		a'2. g4
+		f8 e ees4~ ees2~
+		ees2 \times 2/3 {r4 d c}
+		\break
+		f8 bes,~ bes4~ \times 2/3 {bes bes a}
+		bes2 \times 2/3 {r4 bes a}
+		g'2 r8 bes, bes a
+		bes2 \times 2/3 {r4 bes a}
+		a'8 bes a2 a,4
+		bes2 c4 d
+		bes'1~ 
+		bes2 r4 bes
+		a2 \times 2/3 {g4 \( d \) bes}
+		\times 2/3 {a bes a~} a2
+		r4 bes c d
+		\times 2/3 {c d c~} c2
+		r8 g'~ g4 a bes
+		\times 2/3 {a bes a~} a2
+		bes1~
+		bes \>
+		r2 \! \times 2/3 {bes,4 c d}
+		\times 2/3 {c d c~} c2
+		bes1~
+		bes2 r2
+		\bar "||"
+
+	}
+	%\lyrics
 }
 
 altoA = {
 	\relative c'' {
 		\time 4/4
-		\key e \minor
+		\key g \major
 
 		r8 b'4.~ \p b2
 		r8 b4.~ b2
@@ -128,9 +204,12 @@ altoA = {
 	%\harmonies
 	%}
 
-	\new Staff
-	\transpose g c
-	\altoA
+	%\new Staff
+	%\transpose g c
+    \new Voice = "voice" {
+      \voice
+    }
+    \new Lyrics \lyricsto "voice" \text
 
   >>
 
