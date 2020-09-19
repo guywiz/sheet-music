@@ -19,7 +19,7 @@ text = \lyricmode {
 	Yet __ you're -- my -- fav -- 'rite work of art __
 	Is -- your -- fig -- ure __ less -- than -- Greek?
 	Is -- your -- mouth -- a -- lit -- tle weak?
-	%When you o -- pen it to speak
+	When you o -- pen it to speak
 	Are you smart? __
 	%But don't change your hair for me
 	%Not if you care for me
@@ -75,9 +75,15 @@ voice = {
 		bes1~
 		bes2 r2
 		\bar "||"
-
+		\break
+		\compressFullBarRests
+		R1 * 8
+		\compressFullBarRests
+		R1 * 7
+		r2 \times 2/3 {r4 d c}
+		f8 bes,~ bes4~ \times 2/3 {bes bes a}
+		bes2 
 	}
-	%\lyrics
 }
 
 altoA = {
@@ -209,7 +215,7 @@ altoA = {
     \new Voice = "voice" {
       \voice
     }
-    %\new Lyrics \lyricsto "voice" \text
+    \new Lyrics \lyricsto "voice" \text
 
   >>
 
