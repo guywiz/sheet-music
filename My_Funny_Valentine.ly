@@ -244,13 +244,14 @@ altoA = {
 	%\harmonies
 	%}
 
-	\new Staff <<
+	\new Staff %<<
 			%\transpose g c
-    		\new Voice = "voice" {
-    			\voice
-    		}
-    		\new Lyrics \lyricsto "voice" \text
-		>>
+			\voice
+    		%\new Voice = "voice" {
+    		%	\voice
+    		%}
+    		%\new Lyrics \lyricsto "voice" \text
+		%>>
 	>>
 
 	\layout { }
