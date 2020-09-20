@@ -108,11 +108,16 @@ voice = {
 		r8 g'~ g4 a bes
 		\times 2/3 {a bes a~} a2
 		bes1~
-		bes \>
-		r2 \! \times 2/3 {bes,4 c d}
+		bes
+		r2 \mf \times 2/3 {bes,4 c d}
 		\times 2/3 {c d c~} c2
 		bes1~
-		bes2 r2
+		bes1
+		R1 * 2
+		r2 \p ^\markup{Slower} \times 2/3 {g'4 a bes}
+		\times 2/3 {a bes a~} a2
+		f1 \fermata
+		\bar "|."
 	}
 }
 
