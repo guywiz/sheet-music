@@ -4,7 +4,7 @@
 	arranger = "(arr. R. di Marino)"
 }
 
-void_text = \lyricmode {
+text = \lyricmode {
     My __ fun -- ny
 	Val -- en -- tine
 	Sweet __ co -- mic
@@ -26,7 +26,7 @@ void_text = \lyricmode {
 	Stay __ lit -- tle Val -- en -- tine, __ stay __
 	Each day is Val -- en -- tine's __ day __
 
-	%Is -- your -- fig -- ure __ less -- than -- Greek?
+	Is -- your -- fig -- ure __ less -- than -- Greek?
 	%Is -- your -- mouth -- a -- lit -- tle weak?
 	%When you o -- pen it to speak
 	%Are you smart? __
@@ -37,22 +37,6 @@ void_text = \lyricmode {
 	%Each day is Val -- en -- tine's __ day __
 	%
 }
-
-text = \lyricmode {
-
-}
-
-chant = {
-	\relative c' {
-		\time 4/4
-		\key bes \major
-
-		\compressFullBarRests
-		R1 * 8
-		\bar "||"
-
-	}
-)
 
 voice = {
 	\relative c' {
@@ -262,10 +246,10 @@ altoA = {
 
 	\new Staff <<
 			%\transpose g c
-    		\new Voice = "chant" {
-    			\chant
+    		\new Voice = "voice" {
+    			\voice
     		}
-    		\new Lyrics \lyricsto "chant" \text
+    		\new Lyrics \lyricsto "voice" \text
 		>>
 	>>
 
