@@ -4,9 +4,7 @@
 	arranger = "(arr. R. di Marino)"
 }
 
-void_text = {}
-
-text = \lyricmode {
+void_text = \lyricmode {
     My __ fun -- ny
 	Val -- en -- tine
 	Sweet __ co -- mic
@@ -39,6 +37,23 @@ text = \lyricmode {
 	%Each day is Val -- en -- tine's __ day __
 	%
 }
+
+text = \lyricmode {
+
+}
+
+chant = {
+	\relative c' {
+		\time 4/4
+		\key bes \major
+
+		\compressFullBarRests
+		R1 * 8
+		\bar "||"
+
+	}
+)
+
 voice = {
 	\relative c' {
 		\time 4/4
@@ -247,10 +262,10 @@ altoA = {
 
 	\new Staff <<
 			%\transpose g c
-    		\new Voice = "voice" {
-    			\voice
+    		\new Voice = "chant" {
+    			\chant
     		}
-    		\new Lyrics \lyricsto "voice" \void_text
+    		\new Lyrics \lyricsto "chant" \text
 		>>
 	>>
 
