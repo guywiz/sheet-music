@@ -94,7 +94,25 @@ voice = {
 		R1 * 7
 		r2 \times 2/3 {r4 d c}
 		f8 bes,~ bes4~ \times 2/3 {bes bes a}
-		bes2 
+
+		g'2 r8 bes, bes a
+		bes2 \times 2/3 {r4 bes a}
+		a'8 bes a2 a,4
+		bes2 c4 d
+		bes'1~ 
+		bes2 r4 bes
+		a2 \times 2/3 {g4 \( d \) bes}
+		\times 2/3 {a bes a~} a2
+		r4 bes c d
+		\times 2/3 {c d c~} c2
+		r8 g'~ g4 a bes
+		\times 2/3 {a bes a~} a2
+		bes1~
+		bes \>
+		r2 \! \times 2/3 {bes,4 c d}
+		\times 2/3 {c d c~} c2
+		bes1~
+		bes2 r2
 	}
 }
 
