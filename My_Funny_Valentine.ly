@@ -4,6 +4,8 @@
 	arranger = "(arr. R. di Marino)"
 }
 
+void_text = {}
+
 text = \lyricmode {
     My __ fun -- ny
 	Val -- en -- tine
@@ -21,10 +23,20 @@ text = \lyricmode {
 	Is -- your -- mouth -- a -- lit -- tle weak?
 	When you o -- pen it to speak
 	Are you smart? __
-	%But don't change your hair for me
-	%Not if you care for me
-	%Stay little valentine, stay
-	%Each day is Valentine's day
+	But don't change __ your hair for me __
+	Not if you care for me __
+	Stay __ lit -- tle Val -- en -- tine, __ stay __
+	Each day is Val -- en -- tine's __ day __
+
+	%Is -- your -- fig -- ure __ less -- than -- Greek?
+	%Is -- your -- mouth -- a -- lit -- tle weak?
+	%When you o -- pen it to speak
+	%Are you smart? __
+	%But don't change __ your hair for me __
+	%Not if you care for me __
+	%Stay __ lit -- tle Val -- en -- tine, __ stay __
+	%Each day is Val -- en -- tine's __ day __
+	%Each day is Val -- en -- tine's __ day __
 	%
 }
 voice = {
@@ -203,22 +215,22 @@ altoA = {
 }
 
 \score {
-  <<
+	<<
 
 	%\new ChordNames {
 	%\set chordChanges = ##t
 	%\harmonies
 	%}
 
-	%\new Staff
-	%\transpose g c
-    \new Voice = "voice" {
-      \voice
-    }
-    \new Lyrics \lyricsto "voice" \text
+	\new Staff <<
+			%\transpose g c
+    		\new Voice = "voice" {
+    			\voice
+    		}
+    		\new Lyrics \lyricsto "voice" \void_text
+		>>
+	>>
 
-  >>
-
-  \layout { }
-  \midi { }
+	\layout { }
+	\midi { }
 }
