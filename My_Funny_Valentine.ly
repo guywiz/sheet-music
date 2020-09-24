@@ -21,12 +21,12 @@ text = \lyricmode {
 	Is -- your -- mouth -- a -- lit -- tle weak?
 	When you o -- pen it to speak
 	Are you smart? __
-	But don't change __ your hair for me __
+	But don't chan -- ge your hair for me __
 	Not if you care for me __
-	Stay __ lit -- tle Val -- en -- tine, __ stay __
-	Each day is Val -- en -- tine's __ day __
+	%Stay __ lit -- tle Val -- en -- tine, __ stay __
+	%Each day is Val -- en -- tine's __ day __
 
-	Is -- your -- fig -- ure __ less -- than -- Greek?
+	%Is -- your -- fig -- ure __ less -- than -- Greek?
 	%Is -- your -- mouth -- a -- lit -- tle weak?
 	%When you o -- pen it to speak
 	%Are you smart? __
@@ -55,11 +55,12 @@ voice = {
 		f'2~f8 ees d c~
 		c1~
 		c2. \> r4 \!
-		r4 bes~ \times 2/3 {bes c d}
-		\times 2/3 {c d c~} c2
 		\break
 		r4 bes~ \times 2/3 {bes c d}
 		\times 2/3 {c d c~} c2
+		r4 bes~ \times 2/3 {bes c d}
+		\times 2/3 {c d c~} c2
+		\break
 		r8 bes~ bes4 c d
 		a'2. g4
 		f8 e ees4~ ees2~
@@ -69,18 +70,22 @@ voice = {
 		bes2 \times 2/3 {r4 bes a}
 		g'2 r8 bes, bes a
 		bes2 \times 2/3 {r4 bes a}
+		\break
 		a'8 bes a2 a,4
 		bes2 c4 d
 		bes'1~ 
 		bes2 r4 bes
+		\break
 		a2 \times 2/3 {g4 \( d \) bes}
 		\times 2/3 {a bes a~} a2
 		r4 bes c d
 		\times 2/3 {c d c~} c2
+		\break
 		r8 g'~ g4 a bes
 		\times 2/3 {a bes a~} a2
 		bes1~
 		bes \>
+		\break
 		r2 \! \times 2/3 {bes,4 c d}
 		\times 2/3 {c d c~} c2
 		bes1~
@@ -244,14 +249,14 @@ altoA = {
 	%\harmonies
 	%}
 
-	\new Staff %<<
+	\new Staff <<
 			%\transpose g c
-			\voice
-    		%\new Voice = "voice" {
-    		%	\voice
-    		%}
-    		%\new Lyrics \lyricsto "voice" \text
-		%>>
+			%\voice
+    		\new Voice = "voice" {
+    			\voice
+    		}
+    		\new Lyrics \lyricsto "voice" \text
+		>>
 	>>
 
 	\layout { }
